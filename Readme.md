@@ -1,7 +1,7 @@
 
 # Epic Dummy Web Developer Portfolio
 
-This project is designed to be an example of Pet Grooming webpage. The project is also coded as HTML and CSS only.
+This project is designed to be an example of Pet Grooming webpage. The project is also coded as HTML and CSS only. I and johnmiko624 developed this.
 
 ## Table of Contents
 - [Demo](#demo)
