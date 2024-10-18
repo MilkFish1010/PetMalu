@@ -1,6 +1,5 @@
 
-# Epic Dummy Web Developer Portfolio
-
+# PetMalu (local pet grooming page) 🐶
 This project is designed to be an example of Pet Grooming webpage. The project is also coded as HTML and CSS only. I and johnmiko624 developed this.
 
 ## Table of Contents
