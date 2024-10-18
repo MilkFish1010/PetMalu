@@ -10,7 +10,7 @@ This project is designed to be an example of Pet Grooming webpage. The project i
 
 ## Page link:
 
-You can view the live project at [Live Demo Link]([🌐])(https://milkfish1010.github.io/midterm-web-design/).
+You can view the live project at https://milkfish1010.github.io/PetMalu/
 
 ## Installation
 
