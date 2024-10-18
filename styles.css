@@ -247,36 +247,32 @@ animation: dada 3s infinite;
         background: #483a16;
     }
 /* Navigation buttons */
-.navbar {
+   /* Navigation buttons */
+   .navbar {
     position: fixed;
     top: 0;
-    left: 0; /* Move navbar to the left side */
-    transform: translateX(0); /* No need for centering horizontally */
-    background-color: rgba(58, 36, 29, 0.8);
+    left: 50%;          
+    transform: translateX(-50%);  
+    background-color: rgba(171, 123, 93, 0.8);
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Change layout to vertical */
-    justify-content: flex-start; /* Align items to start of the column */
-    height: 70%; /* Full height of the page */
-    width: 100px; /* Set a fixed width for the side navbar */
-    max-width: none; /* Remove max-width constraint */
+    justify-content: center;  
+    width: 310%;  
+    max-width: 1200px; 
     z-index: 9999;
-}
+  }
+  
 
-/* List inside the navbar */
 .navbar ul {
     list-style-type: none;
-    display: block; /* Make it a block for vertical stacking */
-    padding: 0; /* Remove any padding */
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-/* Navbar list items */
 .navbar li {
-    margin: 20px 0; /* Vertical margin between items */
+    margin: 0 20px;
 }
 
-/* Navbar links */
 .navbar a {
     color: white;
     text-decoration: none;
@@ -284,11 +280,9 @@ animation: dada 3s infinite;
     transition: color 0.3s;
 }
 
-/* Hover effect */
 .navbar a:hover {
     color: #ffbe55;
 }
-
     /* for visibility */
     a {
         color: rgb(227, 138, 5);
