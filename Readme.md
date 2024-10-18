@@ -39,13 +39,13 @@ To view the project, open the `index.html` file in your web browser.
 ## Project Structure
 
 ```
-/your-repository-name
+/PetMalu
 │
 ├── css
 │   └── styles.css         # CSS file for styling the project
 │
 ├── images
-│   ├── wildhob.jpg      # Image used for background
+│   ├── wildhob.jpg        # Funny Josol
 │   ├── mikomuscle.jpg     # Funny Sarsalijo
 │   ├── miko.jpg           # Sarsalijo 1x1
 │   ├── file.jpg           # Josol 1x1
