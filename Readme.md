@@ -41,8 +41,7 @@ To view the project, open the `index.html` file in your web browser.
 ```
 /PetMalu
 │
-├── css
-│   └── styles.css         # CSS file for styling the project
+├── imagesstyles.css       # CSS file for styling the project
 │
 ├── images
 │   ├── wildhob.jpg        # Funny Josol
