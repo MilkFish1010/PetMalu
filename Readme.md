@@ -1,95 +1,62 @@
 
- 1. There is no largest prime number.  
-contradiction:  
-There is a largest prime number, as (m_n). This means that the list of prime numbers is finite:  
+# Epic Dummy Web Developer Portfolio
 
-m_1, m_2, ..., p_n
+This project is designed to be an example of Pet Grooming webpage. The project is also coded as HTML and CSS only.
 
-largest prime number = m_1 + m_2... + m_n + 1
+## Table of Contents
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)  
 
-"largest prime number" is one more than the product of all the primes.  
+## Page link:
 
+You can view the live project at [Live Demo Link]([🌐](https://milkfish1010.github.io/midterm-web-design/)).
 
-Now, two possibilities:
-1.1. (Q) is prime — but that’s a contradiction, since we assumed (p_n) is the largest prime.
-1.2. (Q) is not prime — which means it has a prime factor not in the list. Contradiction again!
+## Installation
 
-Thus, there can’t be a largest prime number. 
+To clone this project, run the following command in your terminal:
 
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+```
 
+Then, navigate into the project directory:
 
- 2. (sqare root of 3) is irrational.  
-contradiction:  
-square root of 3 is rational.  
-So, we can write it as:
-sqare root of 3 = a/b
+```bash
+cd your-repository-name
+```
 
-square both sides = a^2 = 3b^2
+## Usage
 
-This meabns a^2 is a multiple of 3, meaning a itself must be divisible by 3
+To view the project, open the `index.html` file in your web browser. 
 
-Let a = 3k for some integer k. Substituting into the equation:
+### Running Locally
 
-(3k)^2 = 3b^2 
-9k^2 = 3b^2 
-b^2 = 3k^2
+1. Open the `index.html` file directly in your browser.
+2. Alternatively, use a local server (e.g., [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)) for a better experience.
 
-b^2 is divisible by 3, so b must also be divisible by 3.  
+## Project Structure
 
-Now both a and (b) are divisible by 3, contradicting our assumption that a/b was in simplest form.  
-Thus, square root of 3 is irrational. 
+```
+/your-repository-name
+│
+├── css
+│   └── styles.css         # CSS file for styling the project
+│
+├── images
+│   ├── wildhob.jpg      # Image used for background
+│   ├── mikomuscle.jpg     # Funny Sarsalijo
+│   ├── miko.jpg           # Sarsalijo 1x1
+│   ├── file.jpg           # Josol 1x1
+│   ├── PetMalu.png        # hero logo
+│   ├── project1.gif       # Service gif 1
+│   ├── project2.gif       # Service gif 2
+│   ├── project3.gif       # Service gif 3
+│   
+│   
+│
+└── index.html             # Main HTML file
+```
 
----
-
- 3. If n^2 is even, then n must be even.  
-contradiction:  
-n is odd, but n^2 is even.
-
-Since (n) is odd, we can write it as:
-
-n = 2k + 1  where k is an integer
-
-Now, let’s square it:
-
-n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
-
-This is odd because it’s of the form (2m + 1), where (m) is an integer.  
-
-This contradicts the assumption that n^2 is even. Thus, if n^2 is even, n must be even. 
-
-
-
- 4. The sum of an irrational number and a rational number is irrational.  
-contradiction:  
-There is an irrational number b and a rational number y such that their sum is rational.  
-
-b + y = q where q is rational
-
-
-Rearrange the equation:
-
-b = q - r
-
-Since both q and r are rational, their difference q - r is also rational.
-
-This means b is rational, contradicting our assumption that b is irrational. Thus, the sum of an irrational and a rational number is always irrational. 
-
-
-
- 5. There is no smallest positive rational number.  
-contradiction:  
-There is a smallest positive rational number, say r.  
-
-Since r is positive and rational, we can write it as:
-
-r = ab where a and b are positive integers
-
-
-
-
-s = r/2 = a/2b
-
-This s is also a positive rational number, and it is smaller than r. This contradicts the assumption that r was the smallest positive rational number.
-
-Thus, there is no smallest positive rational number. 
 
