@@ -157,15 +157,14 @@ border-radius: 10px;
     font-size: 24px;
 }
 /* Style the summary as a button-like image trigger */
-/* Reset summary styles and center content */
 details summary {
     all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
     width: 100%; 
-    cursor: pointer;
+    cursor: default; /* Default cursor on non-clickable areas */
     margin: 10px auto;
 }
 
@@ -180,19 +179,75 @@ summary::before {
     height: 50px;
     margin-bottom: 10px;
     margin-left: 50px;
+    cursor: pointer; /* Pointer only on paw image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    position: relative;
+    overflow: hidden; /* For ripple effect */
+    animation: pulse 2s infinite; /* Continuous pulse animation */
 }
 
-/* Initial text: "Click the paw for info!" */
+/* Paw Image Hover: Scale, rotate, and shadow */
+summary::before:hover {
+    transform: scale(1.2) rotate(10deg); /* Scale and rotate */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2) sepia(0.2); /* Brightness and sepia effect */
+}
+
+/* Ripple effect on click */
+summary::before:active::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: ripple 0.6s ease-out;
+}
+
+/* Pulse animation for the paw image */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Slight pulsing effect */
+    }
+}
+
+
+/* Prevent clicks on the text */
 summary::after {
     content: "👆Click the paw for info!";
     font-size: 1rem;
     font-weight: bold;
     color: #000;
+    pointer-events: none; /* Disable pointer events on text */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* When the details element is open, change the text */
+/* Bounce effect on text hover */
+summary:hover::after {
+    transform: translateY(-5px);
+    color: #e5a708;
+}
+
+/* When details element is open, change the text */
 details[open] summary::after {
     content: "❌Click the paw to close info!";
+    color: red;
+}
+
+/* Optional: Fade-in animation for the content inside details */
+details div {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
 }
 
 /* For limiting exaggerating details */
