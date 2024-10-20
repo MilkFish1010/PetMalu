@@ -156,37 +156,45 @@ border-radius: 10px;
     margin-top: 20px;
     font-size: 24px;
 }
-/* for open and close visuals */
+/* Style the summary as a button-like image trigger */
+/* Reset summary styles and center content */
 details summary {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack image and text vertically */
+    width: 100%; 
     cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #000000;
-    background: linear-gradient(135deg, #fdfdfb, #f6c502fe);
-    padding: 10px;
-    border-radius: 10px;
-    width: 40%;;
-    text-align: center;
-    list-style: none;
-    border: outset rgb(221, 155, 14) 10px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: smaller;
-    list-style: none;
+    margin: 10px auto;
 }
 
-details[open] summary::before {
-    content: "❌";
-    padding: 10px;
-    text-align: center;
-    font-size: smaller;
-    list-style: none;
-}
-
+/* Paw image */
 summary::before {
-    content: "click for info!";
-    
+    content: "";
+    display: block;
+    background-image: url('images/button-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
+
+/* Initial text: "Click the paw for info!" */
+summary::after {
+    content: "👆Click the paw for info!";
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* When the details element is open, change the text */
+details[open] summary::after {
+    content: "❌Click the paw to close info!";
+}
+
 /* For limiting exaggerating details */
 
 @media (max-width: 768px) {

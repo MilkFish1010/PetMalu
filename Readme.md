@@ -1,6 +1,6 @@
 
 # PetMalu (local pet grooming page) 🐶
-This project is designed to be an example of Pet Grooming webpage. The project is also coded as HTML and CSS only. I and johnmiko624 developed this.
+This project is designed to be an example of Pet Grooming webpage. The project is also coded in HTML and CSS and JS. I and johnmiko624 developed this.
 
 ## Table of Contents
 - [Demo](#demo)
@@ -40,19 +40,20 @@ To view the project, open the `index.html` file in your web browser.
 ```
 /PetMalu
 │
-├── imagesstyles.css       # CSS file for styling the project
+├── styles.css       # CSS file for styling the project
 │
 ├── images
-│   ├── wildhob.jpg        # Funny Josol
-│   ├── mikomuscle.jpg     # Funny Sarsalijo
-│   ├── miko.jpg           # Sarsalijo 1x1
-│   ├── file.jpg           # Josol 1x1
-│   ├── PetMalu.png        # hero logo
+│   ├── button-image.png   # A paw button image
+│   ├── wildhob.jpg        # Funny Josol 1 x 1 image
+│   ├── mikomuscle.jpg     # Funny Sarsalijo 1 x 1 image
+│   ├── miko.jpg           # Sarsalijo 1 x 1 image
+│   ├── file.jpg           # Josol 1 x 1 image
+│   ├── PetMalu.png        # Hero logo
 │   ├── project1.gif       # Service gif 1
 │   ├── project2.gif       # Service gif 2
 │   ├── project3.gif       # Service gif 3
-│   
-│   
+│   ├── dog-dance.gif      # Dancing dog GIF
+│   ├── cat.gif            # Cat GIF
 │
 └── index.html             # Main HTML file
 ```
