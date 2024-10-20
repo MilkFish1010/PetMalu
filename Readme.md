@@ -1,6 +1,6 @@
 
 # PetMalu (local pet grooming page) 🐶
-This project is designed to be an example of Pet Grooming webpage. The project is also coded in HTML and CSS and JS. I and johnmiko624 developed this.
+This project is designed to be an example of Pet Grooming webpage. The project is also coded in HTML and CSS and JS. MilkFish1010 and johnmiko624 developed this.
 
 ## Table of Contents
 - [Demo](#demo)
