@@ -1,5 +1,5 @@
   /* My preffered styles */
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -496,4 +496,38 @@ animation: dada 3s infinite;
       @-ms-viewport{
         width: 480px;
         }
-      
+        .dashboard-links {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .dashboard-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .dashboard-card {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        
+        .dashboard-card img {
+            width: 100%;
+            height: auto;
+        }
+        .dashboard-card:hover {
+            transform: scale(1.05);
+        }
+        .dashboard-card .label {
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgb(225, 215, 103);
+            color: #fff;
+        }
+        
